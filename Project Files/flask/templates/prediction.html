@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction</title>
+</head>
+<body>
+  <h2>Prediction Result</h2>
+  <img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Uploaded Image" width="200">
+  <p><strong>Predicted Pollen:</strong> {{ label }}</p>
+  <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
